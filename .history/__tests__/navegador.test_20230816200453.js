@@ -14,7 +14,7 @@ describe("Mi primer test en puppeteer", () => {
 			// defaultViewport: null,
 		})
 		const page = await browser.newPage()
-		await page.goto("https://www.eltiempo.com/")
+		await page.goto("https://espanol.yahoo.com/")
 		await page.waitForSelector("img")
 
 		// await page.reload() //RECARGAR LA PAGINA
@@ -27,7 +27,7 @@ describe("Mi primer test en puppeteer", () => {
 		//navegar hacia atras
 		await page.goBack()
 		await page.goForward()
-		await page.waitForSelector("img")
+		// await page.waitForSelector("img")
 
 		//abrir otra pagina
 		const page2 = await browser.newPage()

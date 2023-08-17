@@ -14,25 +14,17 @@ describe("Mi primer test en puppeteer", () => {
 			// defaultViewport: null,
 		})
 		const page = await browser.newPage()
-		await page.goto("https://www.eltiempo.com/")
+		await page.goto("https://espanol.yahoo.com/")
 		await page.waitForSelector("img")
 
 		// await page.reload() //RECARGAR LA PAGINA
-		// await page.waitForSelector("img") // espera encontyrar in selector img
+		// await page.waitForSelector("img")
 		//Navegar a otro sitio
 		await page.goto("https://platzi.com/")
 		await page.waitForSelector(
 			"#Header-v2 > nav > div.Logo > div > a > div > figure:nth-child(1) > img"
 		)
-		//navegar hacia atras
-		await page.goBack()
-		await page.goForward()
-		await page.waitForSelector("img")
-
-		//abrir otra pagina
-		const page2 = await browser.newPage()
-		await page2.goto("https://google.com/")
 
 		await browser.close() // cerrar el navegador
-	}, 350000)
+	}, 50000)
 })
