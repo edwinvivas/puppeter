@@ -1,0 +1,19 @@
+{
+  "name": "platzi-puppeteer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --forceExit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.6.2",
+    "puppeteer": "^21.0.3"
+  },
+  "devDependencies": {
+    "pretier": "^0.0.1"
+  }
+}
